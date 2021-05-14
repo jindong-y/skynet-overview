@@ -415,7 +415,7 @@ h2 span {
 .externalLinkButton{
     /* external-link */
 
-    background:url("./images/external-link.svg");
+    background:url("../images/external-link.svg");
 
     border: none;
 

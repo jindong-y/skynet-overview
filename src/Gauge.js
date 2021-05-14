@@ -1,9 +1,12 @@
 import React from "react"
 import {arc} from "d3-shape"
-import * as styles from "./gauge.module.css"
+import * as styles from "./styles/gauge.module.css"
 
+
+
+//d3-shape is imported to help draw arc svg
 function Gauge({
-                   value = 98,
+                   value = 100,
                }) {
     
     const MainInnerRad=18;
@@ -11,11 +14,14 @@ function Gauge({
     const SecondaryInnerRad=14;
     const SecondaryOuterRad=18;
 
-
+    //set gauge color based on the value
     const style=value<=60?styles.alertScoreColor
             :value<=80?styles.warningScoreColor
             :styles.goodScoreColor;
 
+    //Filled arc indicating the score
+    //Has a padding of 2 degree every 60 degree
+    //return an array of d in <path/>
     const valueArc = ()=>{
         let degree=value/100*240;
         let ellipse=[];
@@ -56,6 +62,7 @@ function Gauge({
         .startAngle(-Math.PI * 2 / 3)
         .endAngle(Math.PI * 2 / 3)
         ();
+
     const secondaryBackgroundArc = arc()
         .innerRadius(SecondaryInnerRad)
         .outerRadius(SecondaryOuterRad)
@@ -63,8 +70,7 @@ function Gauge({
         .endAngle(Math.PI * 2 / 3)
         ();
 
-
-
+    //calculate the location of the arrow. Used for translation.
     const arrowLocation=()=>{
         const degree=7/6*Math.PI-value/100*4/3*Math.PI;
         return {
@@ -100,7 +106,7 @@ function Gauge({
                     className={styles.secondBackground}
                 />
 
-                // pointer
+                // arrow pointer
                 <path
                     d="M0.0269775 4.37666L1.52698 0.272919L3.02698 4.37666H1.52698H0.0269775Z"
                     fill="#354559"

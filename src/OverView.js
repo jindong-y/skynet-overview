@@ -1,14 +1,11 @@
-import img from './images/image1.png'
 
 import Gauge from "./Gauge"
-import * as styles from "./styles.module.css";
+import * as styles from "./styles/styles.module.css";
 import React, {useEffect} from "react";
 import Axios from "axios";
 
 function Overview() {
-
     return (
-
         <div className={styles.overview}>
             <Title/>
             <TableView/>
@@ -16,8 +13,9 @@ function Overview() {
     )
 }
 
-function Title() {
 
+//Title component
+function Title() {
     return (
         <div className={styles.frame5369}>
             <div className={styles.frame5370}>
@@ -28,14 +26,14 @@ function Title() {
         </div>
     )
 }
-
+//right half: a table
 function TableView() {
 
     const [data, setDate] = React.useState();
 
+    //fetch data from sample API only when the page is loaded
     useEffect(() => {
         console.log("fetch data")
-
         Axios.get('https://www.certik.org/api/quickscan/project?projectId=pancakeswap')
             .then((response) => {
                 setDate(response.data?.primitives)
@@ -52,13 +50,12 @@ function TableView() {
                 {data?.map((cell,index) => {
                     return <TableCell key={index} {...cell}/>
                 })}
-                {/*<TableCell {...data[0]}/>*/}
-                {/*<TableCell {...data[1]}/>*/}
             </div>
         </div>
     );
 }
 
+//cell component of the table
 function TableCell(props) {
     const { score} = props;
     return (
@@ -67,7 +64,6 @@ function TableCell(props) {
                 <div className={styles.cellContent}>
                     <Comments {...props}/>
                 </div>
-
                 <div className={styles.gauge}>
                     <Gauge value={score}/>
                     <p className={styles.score}>{score}</p>
@@ -77,17 +73,22 @@ function TableCell(props) {
     );
 }
 
-
+//comments component has h1 name and h2 description.
 function Comments(props) {
     const {name, issues, checks, score} = props;
+
+    //set color and adjective word based on the score.
     const color = score <= 60 ? styles.alert
         : score <= 80 ? styles.warning
             : styles.good;
     const adj = score <= 60 ? 'average'
         : score <= 80 ? 'good'
             : 'excellent';
+    // set some reused span
     const issuesSpan = <span className={color}>{issues}</span>;
     const commentsSpan = <span className={color}>{adj}</span>;
+
+
     switch (name) {
         case "static-analysis":
             return <div>
