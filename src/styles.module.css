@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --background-color: #ffffff;
+    --detail-color: #262626;
+    --detail-font-color: #ffffff;
+    --Secondary-Red:#E75252;
+    --Primary-Gold:#E1AA4C;
+    --Secondary-Green:#40B884;
+    --Secondary-Light-Blue:#4D6380;
+    --Primary-Blue:#354559
+}
+.alert{
+    color:var(--Secondary-Red)
+}
+.warning{
+    color:var(--Primary-Gold)
+}
+.good{
+    color:var(--Secondary-Green)
+}
+.secondaryLightBlue{
+    color:var(--Secondary-Light-Blue)
+}
+/*overview*/
+.overview{
+    position: relative;
+    width: 1220px;
+    height: 630px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+/*title*/
+.frame5369{
+    /* Frame 5369 */
+
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 395px;
+    height: 32px;
+    left: 24px;
+    top: 24px;
+}
+.frame5370{
+    /* Frame 5370 */
+
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 190px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.frame5369 img {
+    /* image 1 */
+
+
+    position: static;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    border-radius: 100px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.frame5369 h1{
+    position: static;
+    width: 213px;
+    height: 32px;
+    left: 182px;
+    top: 0px;
+
+    /* Header 1 */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+
+    /* Primary/Blue */
+
+    color: var(--Primary-Blue);
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.frame5370 h1{
+    position: static;
+    width: 142px;
+    height: 32px;
+    left: 40px;
+    top: 0px;
+
+
+    /* Header 1 */
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: -0.02em;
+
+    /* Primary/Blue */
+
+    color: var(--Primary-Blue);
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+/*content*/
+.frame5365{
+    /* Frame 5365 */
+
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 1172px;
+    height: 536px;
+    left: 24px;
+    top: 70px;
+}
+
+
+
+.frame5364{
+    /* Frame 5364 */
+
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 574px;
+    height: 536px;
+    left: 598px;
+    top: 0px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+
+.tableCell{
+    /* Frame 5367 */
+
+
+    /* Auto Layout */
+
+    position: static;
+    width: 574px;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*padding: 12px;*/
+
+
+
+    background: rgba(53, 69, 89, 0.03);
+    border-radius: 4px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.cellContainer{
+    /* Frame 5368 */
+
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 550px;
+    height: 52px;
+    left: 12px;
+    top: 12px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+.cellContent {
+    /* Frame 5389 */
+
+
+    position: static;
+    /*width: 48px;*/
+    height: 38.63px;
+    left: 502px;
+    top: 6.68px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.cellContent h1{
+    /* Our team has conduct */
+
+
+    position: static;
+    /*width: 115px;*/
+    height: 20px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    /* Primary/Blue */
+
+    color: var(--Primary-Blue);
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.cellContent h2{
+    /* Our team has conduct */
+
+
+    position: static;
+    /*width: 404px;*/
+    height: 24px;
+    left: 0px;
+    top: 28px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+h2 span {
+    text-transform: capitalize;
+}
+.gauge{
+    /* Frame 5389 */
+
+
+    position: relative;
+    width: 48px;
+    height: 48px;
+    /*left: 502px;*/
+    /*top: 6.68px;*/
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+
+.score{
+    /* 60 */
+
+
+    position: absolute;
+    left: 26.83%;
+    right: 26.83%;
+    bottom: 6.06%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+
+    /* Primary/Blue */
+
+    color: var(--Primary-Blue);
+
+}
+
+.externalLink{
+    /* Our team has conduct */
+
+
+    position: static;
+    width: 86px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #4980CA;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+.externalLinkButton{
+    /* external-link */
+
+    background:url("./images/external-link.svg");
+
+    border: none;
+
+    position: static;
+    width: 14px;
+    height: 14px;
+    left: 90px;
+    top: 5px;
+
+    /*display: inline-block;*/
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}

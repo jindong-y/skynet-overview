@@ -1,0 +1,21 @@
+
+
+.goodScoreColor{
+    fill:var(--Secondary-Green)
+}
+.warningScoreColor{
+    fill:#E1AA4C
+}
+.alertScoreColor{
+    fill:var(--Secondary-Red)
+}
+.mainBackground{
+    opacity: 0.12
+}
+.secondBackground{
+    background:var(--Secondary-Light-Blue) ;
+    opacity: 0.12;
+}
+.pointer{
+    background:var(--Secondary-Light-Blue);
+}
