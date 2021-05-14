@@ -1,4 +1,4 @@
-#Notes:
+# Notes:
 - Please disable web-security CORS for testing.
 - I don't agree with some css layouts in figma. I think some of them are misleading and unnecessary. Therefore, I made some adjustments to meet the requirements;
 - The right half is implemented.
